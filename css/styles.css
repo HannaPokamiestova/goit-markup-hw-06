@@ -987,6 +987,10 @@ img {
   fill: 20px;
 }
 
+.input-wrap {
+  position: relative;
+}
+
 .icon {
   position: absolute;
   left: 19px;
@@ -1010,7 +1014,6 @@ img {
   height: 40px;
   border: 1px solid var(--form-color);
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 16px;
   padding-top: 12px;
 }
@@ -1024,6 +1027,10 @@ img {
 }
 
 .button-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .button-acent {
