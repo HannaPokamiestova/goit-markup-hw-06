@@ -664,6 +664,13 @@ body {
   padding-left: 16px;
   padding-bottom: 15px;
   padding-top: 15px;
+  transition: var(--transition-time) var(--transition-animation);
+  transition-property: border-color;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-input::placeholder {
@@ -973,9 +980,11 @@ img {
   flex-direction: column;
 }
 
+.form-field {
+  margin-bottom: 10px;
+}
+
 .modal-text {
-  width: 25px;
-  height: 14px;
   padding-bottom: 4px;
   font-style: normal;
   font-weight: 400;
@@ -984,6 +993,7 @@ img {
   color: var(--secondary-text-color);
   letter-spacing: 0.01em;
   fill: 20px;
+  display: block;
 }
 
 .input-wrap {
@@ -1013,8 +1023,8 @@ img {
   height: 40px;
   border: 1px solid var(--form-color);
   border-radius: 4px;
-  padding-left: 16px;
-  padding-top: 12px;
+  padding-right: 15px;
+  padding-left: 45px;
 }
 
 .modal-input:hover {
@@ -1027,7 +1037,7 @@ img {
 
 .button-icon {
   position: absolute;
-  left: 0;
+  left: 15px;
   top: 50%;
   transform: translateY(-50%);
 }
