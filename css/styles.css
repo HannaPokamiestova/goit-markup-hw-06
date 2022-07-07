@@ -1059,9 +1059,23 @@ img {
   margin-bottom: 30 px;
 }
 
+.icon-modal-agreement {
+  fill: transparent;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  vertical-align: text-top;
+}
+
+.icon-modal-agreement-input:focus ~ .icon-modal-agreement {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 .agree {
   margin-bottom: 30px;
   color: var(--secondary-text-color);
+  text-align: center;
 }
 
 .modal-link {
