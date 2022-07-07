@@ -984,6 +984,10 @@ img {
   margin-bottom: 10px;
 }
 
+.form-field:last-of-type {
+  margin-bottom: 20px;
+}
+
 .modal-text {
   padding-bottom: 4px;
   font-style: normal;
@@ -1016,7 +1020,6 @@ img {
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
-  margin-bottom: 20px;
 }
 .modal-input {
   width: 448px;
@@ -1054,6 +1057,11 @@ img {
 .modal-agree {
   margin-top: 10px;
   margin-bottom: 30 px;
+}
+
+.agree {
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
 }
 
 .modal-link {
