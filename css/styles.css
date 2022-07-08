@@ -1064,9 +1064,17 @@ img {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   vertical-align: text-top;
+  transition: var(--transition-time) var(--transition-animation);
+  transition-property: fill, background-color, border-color;
+  cursor: pointer;
 }
 
+.icon-modal-agreement-input:hover ~ .icon-modal-agreement,
 .icon-modal-agreement-input:focus ~ .icon-modal-agreement {
+  border-color: var(--accent-color);
+}
+
+.icon-modal-agreement-input:checked ~ .icon-modal-agreement {
   fill: var(--white-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
