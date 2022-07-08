@@ -1030,8 +1030,14 @@ img {
   padding-left: 45px;
 }
 
-.modal-input:hover {
+.modal-input:focus {
   border: 1px solid var(--accent-color);
+}
+
+.modal-input:hover ~ .button-icon,
+.modal-input:focus ~ .button-icon,
+.button-icon:hover {
+  fill: var(--accent-color);
 }
 
 .modal-input::placeholder {
