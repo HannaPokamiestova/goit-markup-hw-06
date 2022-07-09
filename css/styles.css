@@ -611,10 +611,6 @@ body {
   margin-right: 10px;
 }
 
-.footer-item:not(:last-child) {
-  margin-right: 70px;
-}
-
 .footer-icons {
   display: flex;
   align-items: baseline;
@@ -666,6 +662,7 @@ body {
   padding-top: 15px;
   transition: var(--transition-time) var(--transition-animation);
   transition-property: border-color;
+  color: var(--white-color);
 }
 
 .form-input:hover,
@@ -677,8 +674,12 @@ body {
   color: var(--color-footer);
 }
 
-.footer-item.subscription {
-  margin-left: auto;
+.subscription {
+  margin-left: 70px;
+}
+
+.footer-item {
+  margin-right: 70px;
 }
 
 .subscription-form {
@@ -960,8 +961,14 @@ img {
   transition-property: fill;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--transition-animation);
-
   cursor: pointer;
+}
+
+.modal-close:hover {
+  fill: var(--accent-color);
+}
+
+.modal-close:focus {
 }
 
 .modal-title {
@@ -1048,6 +1055,7 @@ img {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
+  transition: var(--transition-time) var(--transition-animation);
 }
 
 .button-acent {
